@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        :root{
+            /*RENKLER*/
+            --box1-bg:green ;
+            --box2-bg:red;
+            --box3-bg:yellow;
+            --box4-bg:violet;
+            --box5-bg:blue;
+            --box6-bg:purple;
+            /*YAZI BOYUTU*/
+            --fs-20:20px;
+            --fs-30:30px;
+            --fs-40:40px;
+            --box1-fs:22px;
+            --box-wt:;
+        }
+        .main{
+            transition: all 2s;
+        }
+        .box1{
+            width:200px ;
+            height:200px ;
+            border: 4px solid black ;
+            background:green ;
+            float:left ;
+            transition: all 2s;
+           
+        
+        }
+        .box1:hover{
+            transform: translate(0px,100px);
+        
+        }
+        .box2{
+            width:200px ;
+            height: 200px;
+            border:4px solid black ;
+            background:red;
+            float: left;
+            transition: all 2s;
+            font-size: calc(2*var(--box1-fs));
+
+        }
+        .box2:hover{
+            transform: rotate(630deg);
+
+        }
+        
+        .box3{
+            width:200px ;
+            height:200px ;
+            border: 4px solid black;
+            background:yellow ;
+            float:left ;
+            transition:  all 1s;
+
+        }
+        .box3:hover{
+            transform: scale(2);
+
+        }
+       
+        .box4{
+            width:200px ;
+            height:200px ;
+            font-size: var(--fs-30);
+            border: 4px solid black;
+            background:blueviolet ;
+            float: left;
+            position: relative;
+        }
+        .box4:hover{
+            color: white;
+            background: orange;
+
+        }
+        .box5{
+            width:200px ;
+            height: 200px;
+            border: 4px solid black ;
+            background:blue ;
+            float:left;
+            
+        }
+        .box5:hover{
+            transform: rotate(180deg) translate(0px,200px)
+
+        }
+        
+        .box6{
+            width:200px ;
+            height:200px ;
+            border:4px solid black ;
+            background:chocolate ;
+            float:left ;
+        }
+        .box6:hover{
+            background: fuchsia;
+            width: 100px;
+            height: 400px;
+            transform: rotate(-90deg) translate(0px,100px);
+
+        }
+        main>div{
+            transition: all 2s;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="box1">
+            
+            <i style="font-size: 20px; color: aqua;" class="fab fa-instagram" aria-hidden="true"></i>
+            <i style="font-size: 10px; color: brown;"  class="fa fa-home" aria-hidden="true"></i>
+
+        </div>
+        <div class="box2">
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi, nisi quaerat, eum possimus sed sequi minus autem facilis ad expedita minima officiis soluta nesciunt voluptatem dignissimos, provident atque optio quis.
+            </p>
+        </div>
+        <div class="box3"></div>
+        <div class="box4">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore sit nesciunt mollitia voluptatem eligendi exercitationem eius minus enim libero in magnam, id odio deserunt asperiores voluptatibus nulla officiis ad placeat.
+        </div>
+        <div class="box5"></div>
+        <div class="box6"></div>
+    </main>
+    <ul style="font-size: 10px;">
+        <li>1.kutu 100px aşağı gitsin 1s</li>
+        <li>2.kutu 360 derece dönsün 1.4s</li>
+        <li>3.kutu kutu boyutu 2 katı oslun</li>
+        <li>4.kutu rengi turuncuya yazı rengi beyaza dönsün</li>
+        <li>5.kutu 180 dereece dönsün ve 200px yukarı gitsin</li>
+        <li>6.kutu renk değişsin , width ve  height artsın, 90deg sönsün ve aşağıya 10px gitsin</li>
+
+    </ul>
+</body>
+</html>
